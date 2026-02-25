@@ -5,8 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-inter: var(--font-inter);
-  --font-pt-sans-caption: var(--font-pt-sans-caption);
+  --font-body: var(--font-inter), ui-sans-serif, sans-serif;
+  --font-head: var(--font-pt-sans-caption), ui-sans-serif, sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -47,8 +48,30 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+@theme {
+  --color-blue-100: oklch(0.7103 0.086 255.95);
+  --color-blue-200: oklch(0.6293 0.1959 257.43);
+  --color-blue-300: oklch(0.5191 0.1577 257.31);
+  --color-blue-400: oklch(0.2782 0.0741 256.71);
+
+  --color-cyan-100: oklch(0.8603 0.1403 204.6);
+  --color-cyan-200: oklch(0.5403 0.0864 204.3);
+  --color-cyan-300: oklch(0.3654 0.0563 203.8);
+
+  --color-gray-100: oklch(0.9849 0.0029 264.54);
+  --color-gray-200: oklch(0.8726 0.0059 264.53);
+  --color-gray-300: oklch(0.6757 0.0126 264.48);
+  --color-gray-400: oklch(0.2598 0.0162 264.24);
+  --color-gray-500: oklch(0.2091 0.0104 268.19);
+  --color-gray-600: oklch(0.1998 0.0086 264.36);
+  --color-gray-700: oklch(0.1818 0.0088 264.33);
+  --color-gray-800: oklch(0.1546 0.0066 270.96);
+
+  --leading-tight: 1.2;
+}
+
 :root {
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0.028 261.692);
   --card: oklch(1 0 0);
@@ -83,7 +106,7 @@
 }
 
 .dark {
-  --background: oklch(0.13 0.028 261.692);
+  --background: oklch(0.1818 0.0088 264.33);
   --foreground: oklch(0.985 0.002 247.839);
   --card: oklch(0.21 0.034 264.665);
   --card-foreground: oklch(0.985 0.002 247.839);
@@ -122,5 +145,9 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }

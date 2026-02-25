@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`font-inter ${inter.variable} ${ptSansCaption.variable} antialiased dark`}
+        className={`font-body ${inter.variable} ${ptSansCaption.variable} antialiased dark`}
       >
         <div className="flex flex-col relative min-h-screen">
           <Header />
-          <main className="flex-1 flex-col mb-12 mt-10">{children}</main>
+          <main className="flex-1 flex-col mb-12 mt-16">{children}</main>
           <Footer />
         </div>
       </body>

@@ -1,7 +1,12 @@
+import { Sections } from "@/components/Sections";
+
 export default function Home() {
+  const { Hero, Feature } = Sections;
+
   return (
-    <div>
-      <p>Hello World</p>
-    </div>
+    <article className="flex flex-col">
+      <Hero />
+      <Feature />
+    </article>
   );
 }
