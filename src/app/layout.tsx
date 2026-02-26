@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`font-body ${inter.variable} ${ptSansCaption.variable} antialiased dark`}
+        className={`font-body ${inter.variable} ${ptSansCaption.variable} dark subpixel-antialiased`}
       >
         <div className="flex flex-col relative min-h-screen">
           <Header />

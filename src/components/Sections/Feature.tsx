@@ -1,10 +1,10 @@
 import {
   CallToActionFeatureCard,
-  type Card,
   FeatureCard,
+  type FeatureCardType,
 } from "./components/FeatureCard";
 
-const cards: Card[] = [
+const cards: FeatureCardType[] = [
   {
     tag: "Simples",
     title: "Crie um catálogo de produtos online em poucos minutos",
