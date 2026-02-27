@@ -1,3 +1,4 @@
+import { CallToActionSection } from "./CallToAction";
 import { CustomerHistorySection } from "./CustomerHistory";
 import { FeatureSection } from "./Feature";
 import { HeroSection } from "./Hero";
@@ -8,4 +9,5 @@ export const Sections = {
   Feature: FeatureSection,
   Support: SupportSection,
   CustomerHistory: CustomerHistorySection,
+  CallToAction: CallToActionSection,
 };

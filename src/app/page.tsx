@@ -1,7 +1,7 @@
 import { Sections } from "@/components/Sections";
 
 export default function Home() {
-  const { Hero, Feature, Support, CustomerHistory } = Sections;
+  const { Hero, Feature, Support, CustomerHistory, CallToAction } = Sections;
 
   return (
     <article className="flex flex-col">
@@ -9,6 +9,7 @@ export default function Home() {
       <Feature />
       <Support />
       <CustomerHistory />
+      <CallToAction />
     </article>
   );
 }
