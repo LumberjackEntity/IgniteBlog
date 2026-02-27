@@ -45,7 +45,7 @@ export const CallToActionSection = (): ReactElement => {
           alt=""
           aria-hidden
           fill
-          className="object-cover h-full w-auto -z-50"
+          className="object-cover object-top h-full w-auto -z-50"
         />
       </div>
     </section>
