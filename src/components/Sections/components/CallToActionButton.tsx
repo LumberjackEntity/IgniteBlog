@@ -11,7 +11,7 @@ export const CallToActionButton = ({ className = "" }: Props) => {
   return (
     <Button
       className={cn(
-        "text-gray-100 bg-blue-300 hover:bg-blue-200 hover:text-white rounded-full md:text-base",
+        "rounded-full bg-blue-300 text-gray-100 hover:bg-blue-200 hover:text-white md:text-base",
         className,
       )}
       asChild

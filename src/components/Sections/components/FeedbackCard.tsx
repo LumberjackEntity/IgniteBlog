@@ -18,22 +18,10 @@ export const FeedbackCard = ({ card }: Props): ReactElement => {
   const { message, user } = card;
 
   return (
-    <article
-      className="
-      flex
-      flex-col
-      gap-8
-      p-6
-      bg-gray-600
-      border
-      border-gray-400
-      md:max-w-md
-      rounded-xl
-    "
-    >
-      <p className="leading-normal text-base italic">{message}</p>
-      <div className="flex gap-3 items-center">
-        <div className="overflow-hidden relative h-9 w-9 ring-1 ring-blue-200 rounded-full">
+    <article className="flex flex-col gap-8 rounded-xl border border-gray-400 bg-gray-600 p-6 md:max-w-md">
+      <p className="text-base italic leading-normal">{message}</p>
+      <div className="flex items-center gap-3">
+        <div className="relative h-9 w-9 overflow-hidden rounded-full ring-1 ring-blue-200">
           <Image
             src={user.profilePhotoUrl}
             alt={`Foto de perfil de ${user.name}`}
@@ -41,10 +29,10 @@ export const FeedbackCard = ({ card }: Props): ReactElement => {
           />
         </div>
         <div className="flex flex-col">
-          <span className="font-medium leading-normal text-gray-200 text-sm">
+          <span className="font-medium text-gray-200 text-sm leading-normal">
             {user.name}
           </span>
-          <span className="leading-normal text-gray-300 text-xs">
+          <span className="text-gray-300 text-xs leading-normal">
             {user.role}
           </span>
         </div>

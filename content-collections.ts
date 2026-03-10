@@ -1,4 +1,5 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
+import { compileMarkdown } from "@content-collections/markdown";
 import { z } from "zod";
 
 const posts = defineCollection({
@@ -7,9 +8,17 @@ const posts = defineCollection({
   include: "**/*.md",
   schema: z.object({
     title: z.string(),
-    summary: z.string(),
+    date: z.string(),
+    image: z.string(),
     content: z.string(),
   }),
+  transform: async (document, context) => {
+    const html = await compileMarkdown(context, document);
+    return {
+      ...document,
+      html,
+    };
+  },
 });
 
 export default defineConfig({

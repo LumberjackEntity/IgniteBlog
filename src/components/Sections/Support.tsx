@@ -36,23 +36,23 @@ export const SupportSection = () => {
 
   return (
     <section className="relative">
-      <div className="container flex flex-col gap-8 items-center justify-center mx-auto px-4 py-12">
-        <h2 className="font-bold font-head leading-tight text-2xl text-center lg:text-3xl md:max-w-lg">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 px-4 py-12">
+        <h2 className="text-center text-2xl md:max-w-lg lg:text-3xl">
           {"Sua loja de afiliados, simples, do jeito que deveria ser"}
         </h2>
 
-        <div className="flex flex-col gap-4 max-w-5xl md:flex-row md:gap-6">
+        <div className="flex max-w-5xl flex-col gap-4 md:flex-row md:gap-6">
           {cards.map((card) => (
             <SupportCard key={`${formatTitle(card.title)}_CARD`} card={card} />
           ))}
         </div>
       </div>
       <Image
-        src={"./background-support.svg"}
+        src={"/background-support.svg"}
         alt=""
         aria-hidden
         fill
-        className="object-center object-cover h-full w-auto -z-50"
+        className="-z-50 h-full w-auto object-cover object-center"
       />
     </section>
   );

@@ -10,6 +10,7 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@hookform/resolvers": "5.2.2",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "0.575.0",
@@ -17,11 +18,13 @@
     "radix-ui": "1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-hook-form": "7.71.2",
     "tailwind-merge": "3.5.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
     "@content-collections/core": "0.14.1",
+    "@content-collections/markdown": "0.1.4",
     "@content-collections/next": "0.2.11",
     "@tailwindcss/postcss": "4.1.18",
     "@types/node": "20",

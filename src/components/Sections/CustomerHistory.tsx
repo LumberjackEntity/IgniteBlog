@@ -24,12 +24,10 @@ const cards: FeedbackCardType[] = [
 
 export const CustomerHistorySection = (): ReactElement => {
   return (
-    <section className="container flex flex-col gap-8 items-center mx-auto px-4 py-20">
-      <h2 className="font-bold font-head leading-tight text-2xl">
-        {"Quem utiliza, aprova!"}
-      </h2>
+    <section className="container mx-auto flex flex-col items-center gap-8 px-4 py-20">
+      <h2 className="text-2xl">{"Quem utiliza, aprova!"}</h2>
 
-      <div className="flex flex-col gap-4 items-center justify-center md:flex-row md:gap-6">
+      <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
         {cards.map((card) => (
           <FeedbackCard
             key={`${String(card.user.name).toUpperCase()}_CARD`}

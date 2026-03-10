@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Ignite Blog",
+  title: "Site.Set",
 };
 
 const inter = Inter({
@@ -29,9 +29,9 @@ export default function RootLayout({
       <body
         className={`font-body ${inter.variable} ${ptSansCaption.variable} dark subpixel-antialiased`}
       >
-        <div className="flex flex-col relative min-h-screen">
+        <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1 flex-col mt-16">{children}</main>
+          <main className="mt-16 flex-1 flex-col">{children}</main>
           <Footer />
         </div>
       </body>

@@ -8,14 +8,7 @@ export const FooterLink = ({ children, href }: FooterLinkProps) => {
   return (
     <Link
       href={href}
-      className="
-        font-medium
-        leading-normal
-        text-blue-100
-        text-sm
-        transition-colors
-        hover:text-blue-200
-      "
+      className="font-medium text-blue-100 text-sm leading-normal transition-colors hover:text-blue-200"
     >
       {children}
     </Link>

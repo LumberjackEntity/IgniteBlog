@@ -17,7 +17,7 @@ const cards: FeatureCardType[] = [
 
 export const FeatureSection = () => {
   return (
-    <section className="container grid gap-3 mx-auto px-4 py-10 md:gap-6 md:grid-cols-2">
+    <section className="container mx-auto grid gap-3 px-4 py-10 md:grid-cols-2 md:gap-6">
       {cards.map((card) => (
         <FeatureCard
           key={`${String(card.tag).toUpperCase()}_CARD`}
